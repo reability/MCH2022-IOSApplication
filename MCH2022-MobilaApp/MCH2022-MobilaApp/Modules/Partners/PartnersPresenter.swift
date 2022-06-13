@@ -16,8 +16,19 @@ protocol Presenter {
 final class PartnersPresenter: Presenter {
     
     weak var view: PartnersView?
+    var service = MHCServiceImp()
     
     func viewDidLoad() {
-        view?.reload([PartnerCardModel(id: 0), PartnerCardModel(id: 1), PartnerCardModel(id: 2)], animated: true)
+        
+        service.getPartners { [weak self] model in
+            
+            let resultModel = model.enumerated().map({ (index, object) in PartnerCardModel(id: index, nameCompany: object.company.name, INN: object.company.INN, legalAddress: object.adress.legalAddress, realAddress: object.adress.realAddress, telephone: object.contacts.telephone, email: object.contacts.email, website: object.contacts.web, production: object.production, status: "Ожидается на рассмотрении с 13 июня 2022") })
+            
+            DispatchQueue.main.async {
+                self?.view?.reload(resultModel, animated: true)
+            }
+            
+        }
+        
     }
 }

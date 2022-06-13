@@ -13,7 +13,8 @@ final class MasterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+//        view.backgroundColor = UIColor(red: 0.95, green: 0.951, blue: 0.97, alpha: 1)
+        view.backgroundColor = .white
         
         openPartnersView()
     }

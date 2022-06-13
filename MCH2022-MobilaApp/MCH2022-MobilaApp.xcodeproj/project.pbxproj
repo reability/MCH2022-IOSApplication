@@ -21,6 +21,10 @@
 		2D4548BD28562C8B00319E28 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4548BC28562C8B00319E28 /* MapViewController.swift */; };
 		2D4548C328562D8000319E28 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2D4548C228562D8000319E28 /* SnapKit */; };
 		2D4548C62856426C00319E28 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4548C52856426C00319E28 /* Service.swift */; };
+		D0081F19285689BA001216E3 /* PartnerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0081F17285689BA001216E3 /* PartnerViewCell.swift */; };
+		D0081F1A285689BA001216E3 /* PartnerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0081F18285689BA001216E3 /* PartnerViewCell.xib */; };
+		D0081F1D2856924A001216E3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D0081F1C2856924A001216E3 /* Kingfisher */; };
+		D0081F1F2856BF5F001216E3 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0081F1E2856BF5F001216E3 /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,9 @@
 		2D4548BA28562B5900319E28 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2D4548BC28562C8B00319E28 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2D4548C52856426C00319E28 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		D0081F17285689BA001216E3 /* PartnerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerViewCell.swift; sourceTree = "<group>"; };
+		D0081F18285689BA001216E3 /* PartnerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartnerViewCell.xib; sourceTree = "<group>"; };
+		D0081F1E2856BF5F001216E3 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0081F1D2856924A001216E3 /* Kingfisher in Frameworks */,
 				2D4548C328562D8000319E28 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				2D4548B5285624CF00319E28 /* PartnerCollectionViewCell.swift */,
+				D0081F17285689BA001216E3 /* PartnerViewCell.swift */,
+				D0081F18285689BA001216E3 /* PartnerViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,6 +136,7 @@
 				2D4548A42856120700319E28 /* Master */,
 				2D4548B928562AF900319E28 /* Main */,
 				2D4548B828562ACA00319E28 /* Map */,
+				D0081F1E2856BF5F001216E3 /* ModalViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -172,6 +183,7 @@
 			name = "MCH2022-MobilaApp";
 			packageProductDependencies = (
 				2D4548C228562D8000319E28 /* SnapKit */,
+				D0081F1C2856924A001216E3 /* Kingfisher */,
 			);
 			productName = "MCH2022-MobilaApp";
 			productReference = 2D45488D285611F700319E28 /* MCH2022-MobilaApp.app */;
@@ -203,6 +215,7 @@
 			mainGroup = 2D454884285611F700319E28;
 			packageReferences = (
 				2D4548C128562D8000319E28 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D0081F1B2856924A001216E3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 2D45488E285611F700319E28 /* Products */;
 			projectDirPath = "";
@@ -220,6 +233,7 @@
 			files = (
 				2D45489D285611FB00319E28 /* LaunchScreen.storyboard in Resources */,
 				2D45489A285611FB00319E28 /* Assets.xcassets in Resources */,
+				D0081F1A285689BA001216E3 /* PartnerViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +251,9 @@
 				2D454891285611F700319E28 /* AppDelegate.swift in Sources */,
 				2D4548AE28561C3D00319E28 /* Partner.swift in Sources */,
 				2D4548B6285624CF00319E28 /* PartnerCollectionViewCell.swift in Sources */,
+				D0081F19285689BA001216E3 /* PartnerViewCell.swift in Sources */,
 				2D4548BB28562B5900319E28 /* MainViewController.swift in Sources */,
+				D0081F1F2856BF5F001216E3 /* ModalViewController.swift in Sources */,
 				2D4548C62856426C00319E28 /* Service.swift in Sources */,
 				2D454893285611F700319E28 /* SceneDelegate.swift in Sources */,
 				2D4548AB28561BAD00319E28 /* PartnersPresenter.swift in Sources */,
@@ -384,7 +400,7 @@
 				INFOPLIST_FILE = "MCH2022-MobilaApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -411,7 +427,7 @@
 				INFOPLIST_FILE = "MCH2022-MobilaApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -458,6 +474,14 @@
 				kind = branch;
 			};
 		};
+		D0081F1B2856924A001216E3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -465,6 +489,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2D4548C128562D8000319E28 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		D0081F1C2856924A001216E3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0081F1B2856924A001216E3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
