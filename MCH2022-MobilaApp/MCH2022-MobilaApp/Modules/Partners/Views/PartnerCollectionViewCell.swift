@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 final class PartnerCollectionViewCell: UICollectionViewCell {
     static var reuseIdentifier: String = "PartnerCollectionViewCell"
     
